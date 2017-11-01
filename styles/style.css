@@ -1,0 +1,203 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: #202020;
+  color: #FEFEFE;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+/*   line-height: 1.4em; */
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+a {
+  color: #f04c82;
+  text-decoration: none;
+}
+
+.jumbotron {
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/71edc948467953.589903990202f.jpg");
+  background-color: rgba(32,32,32,.5);
+  background-blend-mode: overlay;
+/*   background-attachment: fixed; */
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+}
+
+.logo {
+  width: 300px;
+  margin: auto;
+}
+
+.logo .svg img{
+/*   width: 100%; */
+  background-color: #202020;
+  background-color: rgba(32, 32, 32, .7);
+  border-radius: 150px;
+}
+
+.heading p {
+  text-align: center;
+  color: #fefefe;
+  font-style: italic;
+  text-transform: lowercase;
+}
+
+h2, h3 {
+  font-weight: 300;
+}
+
+.wrapper {
+  width: 80%;
+  margin: -50px auto 0 auto;
+  padding: 0 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+/*   background: #fff; */
+/*   padding: 20px; */
+}
+
+.container {
+/*   flex: 1; */
+/*   background: #F04C82; */
+  margin: 10px;
+  /* set element depth for animation */
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+}
+
+.card {
+  cursor: pointer;
+  margin: auto;
+  width: 196px;
+  height: 266px;
+  /* Set the transition effects */
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  -o-transition: -o-transform 0.4s;
+  transition: transform 0.4s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.card.flipped {
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+
+.card .front,
+.card .back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card .front {
+  font-size: 16px;
+  line-height: 210px;
+  text-align: center;
+  text-transform: lowercase;
+  background: #202020;
+  border: .5px solid #F04C82;
+  border-radius: 5px;
+}
+
+.card .back {
+  background: #202020;
+  border: .5px solid #F04C82;
+  border-radius: 5px;
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+
+.content {
+  padding: 0 10%;
+}
+
+.content .card-title {
+  color: #afacab;
+  font-weight: 400;
+  text-transform: lowercase;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.content p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.btn-more {
+  display: block;
+  margin: 22px 3px 22px 3px;
+  text-align: center;
+}
+
+.btn-more a {
+  font-weight: 400;
+  color: #f04c82;
+  padding: 10px 20px;
+  border: 1px solid #F04C82;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 200ms;
+}
+
+.btn-more a:hover {
+  color: #202020;
+  background: #f04c82;
+}
+
+.front img,
+.back img {
+  width: 100%;
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+/* ABOUT PAGE STYLES */
+
+.wrapper-nav {
+  width: 80%;
+  margin: -32px auto 0 auto;
+}
+
+.btn-nav a{
+  background-color: #202020;
+}
+
+.about-content {
+    max-width: 650px;
+    padding: 0 50px 0 50px;;
+    margin: auto;
+}
+
+.about-title {
+  text-align: center;
+}
