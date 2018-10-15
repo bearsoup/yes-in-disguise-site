@@ -98,6 +98,9 @@ h2, h3 {
   -moz-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  /* Remove webkit tap highlight color */
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .card.flipped {
