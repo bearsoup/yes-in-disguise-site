@@ -34,8 +34,10 @@ a {
 }
 
 .logo {
-  width: 300px;
+  max-width: 300px;
+  min-width: 200px;
   margin: auto;
+
 }
 
 .logo .svg img{
@@ -122,13 +124,13 @@ h2, h3 {
   text-align: center;
   text-transform: lowercase;
   background: #202020;
-  border: .5px solid #F04C82;
+  border: 1px solid #F04C82;
   border-radius: 5px;
 }
 
 .card .back {
   background: #202020;
-  border: .5px solid #F04C82;
+  border: 1px solid #F04C82;
   border-radius: 5px;
   -webkit-transform: rotateY( 180deg );
   -moz-transform: rotateY( 180deg );
@@ -200,4 +202,18 @@ h2, h3 {
 
 .about-title {
   text-align: center;
+}
+
+.small-text {
+  font-size: .8em;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 420px) {
+  .jumbotron {
+      padding: 50px 20px 20px 20px;
+  }
+  .heading {
+    padding: 0 0 24px 0;
+  }
 }
