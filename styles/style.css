@@ -172,6 +172,9 @@ h2, h3 {
   border-radius: 25px;
   text-decoration: none;
   transition: background 200ms;
+  /* Remove webkit tap highlight color */
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn-more a:hover {
